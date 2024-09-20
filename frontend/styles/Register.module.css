@@ -1,0 +1,62 @@
+/* Register.module.css */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .formContainer {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white box */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 70vh; /* 70% of viewport height */
+    max-width: 500px; /* Max width for better control */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Full width for children */
+    justify-content: center;
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .registerButton {
+    padding: 10px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .registerButton:hover {
+    background-color: #ff66b2;
+  }
+  

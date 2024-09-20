@@ -1,0 +1,172 @@
+.chatContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5; /* WhatsApp-like light grey */
+}
+
+/* Sidebar (Left) */
+.sidebar {
+  width: 40%; /* Occupies 40% of the width */
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchInput {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.filterOptions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filterButton {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.contactList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.contact {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contact:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.02); /* Expand slightly on hover */
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactName {
+  font-weight: bold;
+}
+
+.lastMessage {
+  font-size: 12px;
+  color: #888;
+}
+
+.contactTime {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Chat Area (Right) */
+.chatArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5ddd5; /* Light chat background */
+}
+
+.chatHeader {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.chatHeader h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sent and Received Messages */
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 60%; /* 60% of chat area */
+  position: relative;
+}
+
+.sent {
+  background-color: #dcf8c6; /* WhatsApp-like green */
+  align-self: flex-end; /* Align right */
+  text-align: right;
+}
+
+.received {
+  background-color: #fff; /* White background for received */
+  align-self: flex-start; /* Align left */
+  text-align: left;
+}
+
+.messageTime {
+  font-size: 10px;
+  color: #999;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Form (Message Input Area) */
+.form {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.attachmentButton {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.sendButton {
+  background-color: #2cb23e;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
